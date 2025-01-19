@@ -1,0 +1,42 @@
+{
+  "name": "lua-bundler",
+  "version": "1.0.0",
+  "description": "A bundler for Lua files adding custom function support.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "bundle": "tsc && node dist/index.js",
+    "dev": "tsc -w",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --ignore-path .gitignore --write \"./src/**/*.+(js|ts|json)\"",
+    "prettier:fix": "prettier --write src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darraghd493/lua-bundler.git"
+  },
+  "author": "darraghd493",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/darraghd493/lua-bundler/issues"
+  },
+  "homepage": "https://github.com/darraghd493/lua-bundler#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/express": "^5.0.0",
+    "@types/luaparse": "^0.2.12",
+    "@types/node": "^22.10.5",
+    "@typescript-eslint/eslint-plugin": "^8.19.0",
+    "@typescript-eslint/parser": "^8.19.0",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "luaparse": "^0.3.1",
+    "picocolors": "^1.1.1"
+  }
+}
