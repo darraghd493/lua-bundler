@@ -47,3 +47,5 @@ The usage of darklua permits support* for other languages such as LuaU, and that
 ## Syntax
 
 Check [SYNTAX.md](SYNTAX.md) for supported syntax.
+
+An example is included by default in the project at `src/script/index.lua`.
