@@ -38,6 +38,19 @@ __VERSION=1.0.0
 __RELEASE=dev
 ```
 
+Output:
+
+```lua
+--[[
+    Header for the script! how cool?
+    Note: this is not processed by darklua
+]]
+
+local function_7014yk=function()return{print=function(...)print(...)end}end
+local function_07y21r=function()local a=function_7014yk()return{test=function()a
+.print'script'a.print'1.0.0'a.print'dev'end}end function_07y21r().test()
+```
+
 ## Darklua
 
 The usage of darklua permits support* for other languages such as LuaU, and that is the main reason for it's inclusion in the project.
