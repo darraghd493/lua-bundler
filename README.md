@@ -2,7 +2,7 @@
 
 A bundler for Lua files with the core intention of adding custom function support.
 
-> **Note:** The project is very *hacky* and is not recommended for production use. If you want to bundle Lua files, consider using [darklua](https://darklua.com/) on its own.
+> **Note:** This project is not recommended for production use. If you want to bundle Lua files, consider using [darklua](https://darklua.com/) alone.
 
 ## Installation
 
