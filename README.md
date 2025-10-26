@@ -1,3 +1,5 @@
+> ⚠️ Deprecation Notice: This project is fundamentally flawed and will no-longer be worked on. I'd recommend an alternative such as [Solder](https://devforum.roblox.com/t/solder-a-simple-fast-bundler-for-roblox-models/3918322), [Wax](https://github.com/latte-soft/wax) or just [darklua](https://darklua.com/).
+
 # lua-bundler
 
 A bundler for Lua files with the core intention of adding custom function support.
