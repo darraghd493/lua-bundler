@@ -178,7 +178,7 @@ abstract class BaseProcessor {
     }
 
     protected generateSpace(): string {
-        return " ".repeat(this.stack.length - 1);
+        return " ".repeat(Math.max(0, this.stack.length - 1));
     }
 }
 
