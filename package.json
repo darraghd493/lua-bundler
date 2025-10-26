@@ -4,13 +4,15 @@
   "description": "A bundler for Lua files adding custom function support.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "bundle": "tsc && node dist/index.js",
-    "dev": "tsc -w",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "prettier": "prettier --ignore-path .gitignore --write \"./src/**/*.+(js|ts|json)\"",
-    "prettier:fix": "prettier --write src"
+    "build": "tsc && node dist/index.js build",
+    "watch": "tsc & node dist/index.js watch",
+    "processor:build": "tsc",
+    "processor:bundle": "tsc && node dist/index.js",
+    "processor:dev": "tsc -w",
+    "processor:lint": "eslint .",
+    "processor:lint:fix": "eslint . --fix",
+    "processor:prettier": "prettier --ignore-path .gitignore --write \"./src/**/*.+(js|ts|json)\"",
+    "processor:prettier:fix": "prettier --write src"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,7 @@
     "typescript-eslint": "^8.19.0"
   },
   "dependencies": {
+    "chokidar": "^4.0.3",
     "dotenv": "^16.4.7",
     "luaparse": "^0.3.1",
     "picocolors": "^1.1.1"
